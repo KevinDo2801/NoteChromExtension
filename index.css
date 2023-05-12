@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f9341;
+    min-width: 400px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.2rem #5f9341;
+}
+
+label {
+    color: #5f9341;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    background: #e1e1e1;
+    width: 95%;
+    padding: 3px;
+}
+
+li:nth-child(even) {
+    background: white;
+}
+
+a {
+    color: #5f9341;
+}
+
+.checkbox{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.checkbox__input{
+    display: none;
+}
+
+.checkbox__box{
+    width: 0.8em;
+    height: 0.8em;
+    padding: 1px;
+    border: 3px solid #5f9341;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    flex-shrink: 0;
+}
+
+.checkbox__box::after{
+    content: "\2714";
+    color: white;
+    transform: scale(0);
+    transform: 0.15s;
+}
+
+.checkbox__input:checked + .checkbox__box{
+    background: #5f9341;
+    border-color: #5f9341;
+}
+
+.checkbox__input:checked + .checkbox__box::after{
+    transform: scale(0.6);
+}
+
+i{
+    display: inline;
+    color: #5f9341;
+    font-size: large;
+    transition: 0.3s;
+}
+
+.link_note{
+    font-size: 20px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.bars{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icon__fix{
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.trash:hover{
+    color: #d30f0f;
+}
+
+.edit:hover{
+    color: gray;
+}
+
+.note label {
+    margin-right: 9px;
+}
+
+.note__li{
+    color: gray;
+}
+
+button {
+    background: #5f9341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #5f9341;
+    border: 1px solid #5f9341;
+    background-color: transparent;
+}
+
+#delete-btn {
+    color: #5f9341;
+    border: 1px solid #5f9341;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+#delete-btn:hover {
+    background: #d30f0f;
+    border: 1px solid #d30f0f;
+    color: white;
+}
