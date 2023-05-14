@@ -3,7 +3,7 @@ body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: #5f9341;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 input[type="text"] {
@@ -21,6 +21,7 @@ input[type="text"]:focus{
 }
 
 label {
+    font-size: 15px;
     color: #5f9341;
 }
 
@@ -94,15 +95,8 @@ i{
     transition: 0.3s;
 }
 
-.link_note{
-    font-size: 20px;
-    padding-left: 10px;
-    width: 90%;
-}
-
 .bars{
     margin: 0 10px;
-    cursor: pointer;
 }
 
 .icon__fix{
@@ -119,12 +113,18 @@ i{
     color: gray;
 }
 
-.note label {
-    margin-right: 9px;
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.name label {
+    margin-right: 8px;
 }
 
 .note__li{
     color: gray;
+    margin-left: 5px;
 }
 
 button {
@@ -143,15 +143,27 @@ button:hover {
     background-color: transparent;
 }
 
-#delete-btn {
+.alertRed{
     color: #5f9341;
     border: 1px solid #5f9341;
     background-color: transparent;
     transition: all .5s;
 }
 
-#delete-btn:hover {
+.alertRed:hover {
     background: #d30f0f;
     border: 1px solid #d30f0f;
     color: white;
+}
+
+
+#change-btn, #cancel-btn{
+    display: none;
+}
+
+.external-link{
+    scale: 0.7;
+    cursor: pointer;
+    padding-left: 2px;
+    display: inline-block;
 }

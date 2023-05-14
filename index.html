@@ -1,25 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Note</title>
+    <link rel="icon" href="./NoteWeb.png">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div class="name">
-        <label for="link-el">Name</label>
-        <input type="text" id="link-el">
-    </div>
-    <div class="note">
-        <label for="note-el">Note</label>
-        <input type="text" id="note-el" placeholder="write something...">
+        <label for="link-el">Note</label>
+        <input type="text" id="link-el" placeholder="you can not type">
+        <span>
+            <a href="#" target="_blank">
+                <i class="fa fa-external-link-alt external-link"></i>
+            </a>
+        </span>
     </div>
     <button id="page-btn">SAVE PAGE</button>
-    <button id="delete-btn">DELETE ALL</button>
-    <ul id="ul-el">
-    </ul>
+    <button id="change-btn">SAVE CHANGES</button>
+    <button id="delete-btn" class="alertRed">DELETE ALL</button>
+    <button id="deleteIt-btn" class="alertRed">DELETE ITEMS</button>
+    <button id="cancel-btn" class="alertRed">CANCEL</button>
+    <ul id="ul-el"></ul>
     <script src="index.js"></script>
 </body>
 
